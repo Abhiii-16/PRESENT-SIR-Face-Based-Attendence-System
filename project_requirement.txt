@@ -6,6 +6,8 @@ PIL (pip install Pillow)
 Pandas(pip install pandas)
 Numpy(pip install numpy)
 Pillow (pip install Pillow)
+gunicorn
+
 ****************************************************************************
 haarcascade_frontalface_default.xml  ->>>> 
 haarcascades - the folder contains trained classifiers for detecting objects
