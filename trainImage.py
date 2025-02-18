@@ -7,16 +7,24 @@ import time
 from PIL import ImageTk, Image
 
 
-# Train Image
-def TrainImage(haarcasecade_path, trainimage_path, trainimagelabel_path, message,text_to_speech):
+def TrainImage(haarcasecade_path, message, text_to_speech):
+    trainimage_path = os.path.join(os.getcwd(), "TrainingImage")
+    trainimagelabel_path = os.path.join(os.getcwd(), "Trainner", "Trainner.yml")
+
+    os.makedirs(trainimage_path, exist_ok=True)
+    os.makedirs(os.path.dirname(trainimagelabel_path), exist_ok=True)
+
     recognizer = cv2.face.LBPHFaceRecognizer_create()
     detector = cv2.CascadeClassifier(haarcasecade_path)
-    faces, Id = getImagesAndLables(trainimage_path)
-    recognizer.train(faces, np.array(Id))
+
+    faces, Ids = getImagesAndLables(trainimage_path)
+    recognizer.train(faces, np.array(Ids))
     recognizer.save(trainimagelabel_path)
-    res = "Image Trained successfully"  # +",".join(str(f) for f in Id)
+
+    res = "Image Trained successfully"
     message.configure(text=res)
     text_to_speech(res)
+
 
 
 def getImagesAndLables(path):

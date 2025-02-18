@@ -17,17 +17,6 @@ import takeImage
 import trainImage
 import automaticAttedance
 
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "Attendance System Running"
-
-if __name__ == "__main__":
-    app.run(debug=True)
-
 
 
 # engine = pyttsx3.init()
@@ -37,7 +26,6 @@ if __name__ == "__main__":
 
 
 import tkinter as tk
-import pyttsx3
 import os
 
 
