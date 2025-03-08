@@ -20,14 +20,6 @@
 ![img-1](https://github.com/user-attachments/assets/34da8864-4685-4b44-92f4-d5fb9535401b)
 
 
-### While taking Image
-
-
-
-## While taking Attendance
-
-
-## Attendance in tabular format 
 
 
 
