@@ -11,6 +11,7 @@ import time
 import tkinter.ttk as tkk
 import tkinter.font as font
 
+
 haarcasecade_path = "haarcascade_frontalface_default.xml"
 trainimagelabel_path = (
     "TrainingImageLabel\\Trainner.yml"
