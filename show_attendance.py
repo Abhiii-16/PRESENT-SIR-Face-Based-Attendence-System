@@ -124,6 +124,7 @@ def subjectchoose(text_to_speech):
         relief=RIDGE,
         font=("times", 30, "bold"),
     )
+    
     tx.place(x=190, y=100)
 
     fill_a = tk.Button(
