@@ -21,5 +21,8 @@
 
 
 
+cd "temp-repo"
+dir
+python attendance.py
 
 
